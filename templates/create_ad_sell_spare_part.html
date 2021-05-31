@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Создание объявления о продаже{% endblock %}
+
+{% block body %}
+    <div class="container create_vacancy_cv">
+        <h3 class="">Создание объявления о продаже запчасти</h3>
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>Название запчасти</label>
+                <input class="form-control" name="ad_title" id="ad_title" placeholder="Задний верхний рычаг CRT">
+            </div>
+            <div class="form-group">
+                <label>Артикул запчасти</label>
+                <input class="form-control" name="article_number" id="article_number" placeholder="MR170304">
+            </div>
+            <div class="form-group">
+                <label>Описание</label>
+                <textarea class="form-control" name="text" id="text">
+                </textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Город</label>
+                <input class="form-control" name="location" id="location" placeholder="Г. Москва">
+            </div>
+
+            <div class="form-group">
+                <label>Цена</label>
+                <input class="form-control" name="price" id="price" placeholder="5000">
+            </div>
+
+            <div class="form-group">
+                <label>Фотография запчасти</label>
+                <input type="file" class="form-control" name="image_spare_part" id="image_spare_part">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Создать объявление</button>
+        </form>
+    </div>
+{% endblock %}

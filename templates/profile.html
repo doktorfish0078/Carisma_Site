@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}Ваш профиль{% endblock %}
+
+{% block body %}
+<div class="menu_profile container">
+  <div class="row">
+
+    <div class="col-sm-2">
+      <div class="row profile_name">
+        <h3>Жмышенко VALERACHKA</h3>
+      </div>
+      <div class="row container_profile_menu">
+        <a class="profile_menu_item none_decor_link" href="">Мои объявления о продаже</a>
+        <a class="profile_menu_item none_decor_link" href="">Мои объявления о поиске</a>
+      </div>
+      <div class="row">
+        <a class="profile_menu_item none_decor_link" href="">Настройки</a>
+      </div>
+    </div>
+
+    <div class="col-sm-10 pl-5">
+      {% for ad in ads %}
+      <div class="row">
+        <div class="vacancy-item col">
+          <div class="justify-content-between form-inline">
+            <a class="none_decor_link name_vacancy link" href="/search_spare_parts/{{ ad.id }}">
+              {{ ad.title }}
+            </a>
+            <div class="price_vacancy">
+              {{ ad.price }} руб.
+            </div>
+          </div>
+          <div class="description_vacancy text-break">
+            {{ ad.text }}
+          </div>
+          <div class="town_vacancy text-secondary">
+            {{ ad.location }}
+          </div>
+          <div class="button_date_vacancy justify-content-between form-inline">
+            <div class="btn-group">
+              <a type="button" class="btn btn-success mr-1">Редактировать</a>
+              <a type="button" class="btn btn-danger" href="profile/{{ ad.id }}/ad_delete">Удалить</a>
+            </div>
+            <div class="date_vacancy text-secondary">
+              {{ ad.date.date() }}
+            </div>
+          </div>
+        </div>
+        <div class="w-100"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

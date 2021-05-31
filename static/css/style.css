@@ -1,0 +1,112 @@
+.dark_mode_bg {
+	/*background-image: url(https://pbs.twimg.com/media/EPF_G9HWsAYLm94.jpg)*/
+	/*background-image: url(https://i.pinimg.com/736x/5c/45/73/5c4573197ec4231dffd6a1f550b5ad3f.jpg);*/
+	background-image: url("https://yobte.ru/uploads/posts/2019-11/svetljachki-v-lesu-63-foto-15.jpg");
+}
+
+.none_decor_link {
+	text-decoration: none;
+}
+.none_decor_link:hover {text-decoration: none;}
+
+.bg-flex {
+	background-color: rgb(250,235,215,0.95);
+}
+
+#main_container {
+	width: 1110px;
+}
+
+.main_content {
+	min-height: 100vh;
+}
+
+.search_add_vacancy_cv {
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.vacancy-item{
+	margin-top: 1px;
+	margin-bottom: 1px;
+	z-index: 1;
+	padding: 20px;
+	border:1px solid;
+	border-color: #007bff;
+}
+
+
+.name_vacancy {
+	font-size: 24px;
+}
+
+.price_vacancy {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.button_date_vacancy {
+	margin-top: 7px;
+}
+
+.description_vacancy {
+	width: 400px;
+}
+
+.bloko_drop_item {
+	padding-left: 8px;
+}
+
+.vacancy_drop_name {
+	margin-bottom: 5px;
+	font-size: 19px;
+}
+
+.registration {
+	max-width: 500px;
+	max-height: 500px;
+	padding-top: 100px;
+}
+
+.authorization {
+	max-width: 300px;
+	max-height: 300px;
+	padding-top: 100px;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.create_vacancy_cv {
+	margin-left: 50px;
+	max-width: 650px;
+	max-height: 650px;
+	padding-top: 100px;
+}
+
+#text {
+	min-height: 200px;
+}
+
+.menu_profile {
+	padding-top: 50px;
+}
+
+.profile_name, .container_profile_menu {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid;
+	z-index: 1;
+    border-bottom-color: black;
+}
+
+.profile_menu_item {
+	padding: 5px 0 5px 0;
+}
+
+.image_ad {
+	max-height: 208px;
+	max-width: 156px;
+}

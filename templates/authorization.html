@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Авторизация{% endblock %}
+
+{% block body %}
+    <div class="container authorization">
+        <h1 class="text-center">Вход</h1>
+        <form method="post">
+            <div class="form-group">
+                <label>Почта</label>
+                <input type="name" class="form-control" name="email" id="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="password">
+                <a class="none_decor_link" href="">Забыли пароль?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary center">Войти</button>
+        </form>
+    </div>
+{% endblock %}
